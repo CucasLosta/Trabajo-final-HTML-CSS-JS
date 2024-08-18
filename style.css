@@ -20,6 +20,7 @@ nav{
     padding: 40px;
     display: flex;
     align-items: center;
+    transition: 1000ms;
 }
 
 .navMenu{
@@ -32,7 +33,7 @@ nav{
     color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
-    text-shadow: #000000 2px 3px;
+    text-shadow: #808080 1px 2px, #000000 2px 3px;
     padding: 10px;
     font-size: 1.5em;
     font-weight: 500;
@@ -40,6 +41,15 @@ nav{
 
 .navButton:hover{
     text-shadow: none;
+}
+
+.scrolledNav{
+    background-color: #FFFFFF;
+}
+
+.scrolledNav>ul>li>a{
+    color: #000000;
+    text-shadow:  #FFFFFF 1px 2px, #808080 2px 3px;;
 }
 
 

@@ -11,6 +11,14 @@ body{
     width: 100vw;
 }
 
+h2{
+    font-size: calc(2em + 18px);
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0px;
+    text-shadow: 1px 1px #ffffff, 2px 2px #808080;
+}
+
 /* ESTILOS DE LA BARRA DE NAVEGACIÓN */
 nav{
     height: 174px;
@@ -22,6 +30,7 @@ nav{
     padding: 40px;
     display: flex;
     align-items: center;
+    transition: 1000ms;
 }
 
 .navMenu{
@@ -42,6 +51,15 @@ nav{
 
 .navButton:hover{
     text-shadow: none;
+}
+
+.scrolledNav{
+    background-color: #FFFFFF;
+}
+
+.scrolledNav>ul>li>a{
+    color: #000000;
+    text-shadow:  #FFFFFF 1px 2px, #808080 2px 3px;;
 }
 
 /* ESTILO DE HEADER */
@@ -82,14 +100,6 @@ h1{
     width: 50%;
 }
 
-.seccionTexto>h2{
-    font-size: calc(2em + 18px);
-    font-weight: 500;
-    text-align: center;
-    padding: 20px 0px;
-    text-shadow: 1px 1px #ffffff, 2px 2px #808080;
-}
-
 .seccionTexto{
     padding: 40px;
     display: flex;
@@ -103,25 +113,78 @@ h1{
 }
 
 /* ESTILO DE SECCIÓN VIDEO */
-article>h2{
-    font-size: 40px;
-    text-align: center;
-    padding: 20px 0px;
-    text-shadow: 1px 1px #ffffff, 2px 2px #808080;
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
 }
 
 .videoContainer{
-    width: 80%;
+    width: 70%;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
+    background-color: #808080;
+    padding: 5px;
 }
 
-article>video{
+video{
     width: 100%;
+}
+
+.videoControls{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 .videoButton{
     height: 30px;
     width: 80px;
-    background-color: gray;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px 5px 0px;
+    box-shadow: #000000 2px 3px;
+}
+
+.videoButton:active{
+    box-shadow: none;
+    transform: translate(2px, 3px);
+}
+
+#videoFooterStr{
+    margin-left: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTILO FOOTER */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #2F3645;
+    padding: 90px;
+}
+
+footer > img {
+    height: 80px;
+}
+
+footer > p{
+    color: #EEEEEE;
+}
+
+#footerText1{
+    font-weight: bold;
+    text-align: center;
+}
+
+#footerText2{
+    margin-left: auto;
 }

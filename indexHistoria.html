@@ -9,7 +9,14 @@
 </head>
 <body>
     <nav>
-        <img src="" alt="">
+        <a href="./index.html">
+            <svg width="150" height="90">
+                <rect class="icon1" x="55" y="5" width="60" height="45" fill="lightgray" stroke="gray" stroke-width="1px"></rect>
+                <rect class="icon2" x="60" y="10" width="50" height="35" fill="#495579" stroke="gray" stroke-width="1px"></rect>
+                <polygon class="icon1" points="55 60, 115 60, 125 75, 45 75" fill="lightgray" stroke="gray" stroke-width="2px"></polygon>
+                <polygon class="icon2" points="57.5 62.5, 112.5 62.5, 120 72.5, 50 72.5" fill="#495579" stroke="gray"></polygon>
+            </svg>
+        </a>
         <ul class="navMenu">
             <li class="navItem">
                 <a href="./indexHistoria.html" class="navButton">Historia</a>
@@ -68,9 +75,22 @@
                 <source src="./assets/video/historia-Comp.mp4">
                 <source src="./assets/video/historia-Comp.ogv">
             </video>
-            <div id="playButton" class="videoButton"></div>
-            <div id="pauseButton" class="videoButton"></div>
+            <div class="videoControls">
+                <div id="playButton" class="videoButton">
+                    <img src="./assets/imagenes/play.svg" alt="play">
+                </div>
+                <div id="pauseButton" class="videoButton">
+                    <img src="./assets/imagenes/pausa.svg" alt="pausa">
+                </div>
+                <p id="videoFooterStr">Duración del video: </p>
+            </div>
         </div>
     </article>
+    <footer>
+        <img src="./assets/imagenes/logo.png" alt="">
+        <p id="footerText1">PROGRAMACION<br>E<br>HISTORIA</p>
+        <p id="footerText2">Sitio con fines educativos - Creado por M. Victoria Lopez - Replicado por Lucas Costa</p>
+    </footer>
+    <script src="./scriptHistoria.js"></script>
 </body>
 </html>

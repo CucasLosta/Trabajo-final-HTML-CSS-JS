@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Final</title>
+    <link rel="stylesheet" href="./styleJuguemos.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">
+            <svg width="150" height="90">
+                <rect class="icon1" x="55" y="5" width="60" height="45" fill="lightgray" stroke="gray" stroke-width="1px"></rect>
+                <rect class="icon2" x="60" y="10" width="50" height="35" fill="#495579" stroke="gray" stroke-width="1px"></rect>
+                <polygon class="icon1" points="55 60, 115 60, 125 75, 45 75" fill="lightgray" stroke="gray" stroke-width="2px"></polygon>
+                <polygon class="icon2" points="57.5 62.5, 112.5 62.5, 120 72.5, 50 72.5" fill="#495579" stroke="gray"></polygon>
+            </svg>
+        </a>
+        <ul class="navMenu">
+            <li class="navItem">
+                <a href="./indexHistoria.html" class="navButton">Historia</a>
+            </li>
+            <li class="navItem">
+                <a href="./indexJuguemos.html" class="navButton">Juguemos</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Juguemos un poco</h1>
+    </header>
+    <main>
+        <h2>Armemos el rompecabezas y veamos que imagen es</h2>
+        <section id="puzzleContainer">
+            <div id="puzzleDropBoxContainer">
+                <div class="puzzleDropBox" id="puzzleDropBox1"><p>Arrastre y suelte la imagen aquí</p></div>
+                <div class="puzzleDropBox" id="puzzleDropBox2"><p>Arrastre y suelte la imagen aquí</p></div>
+                <div class="puzzleDropBox" id="puzzleDropBox3"><p>Arrastre y suelte la imagen aquí</p></div>
+            </div>
+            <div id="puzzleImgContainer">
+                <img src="./assets/imagenes/rompe2.png" alt="Imagen del rompecabezas" class="puzzleImg" id="puzzleImg2">
+                <img src="./assets/imagenes/rompe1.png" alt="Imagen del rompecabezas" class="puzzleImg" id="puzzleImg1">
+                <img src="./assets/imagenes/rompe3.png" alt="Imagen del rompecabezas" class="puzzleImg" id="puzzleImg3">
+            </div>
+            <button id="puzzleRestartButton" onclick="window.location.reload()">REINICIAR</button>
+        </section>
+    </main>
+    <script src="./scriptJuguemos.js"></script>
+</body>
+</html>

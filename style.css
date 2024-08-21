@@ -3,13 +3,20 @@
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     width: 100vw;
 }
 
-/* ESTILOS DE LA BARRA DE NAVEGACIÓN */
+
+
+/* ------------------------------------------------------------- */
+/* -------------------- BARRA DE NAVEGACIÓN -------------------- */
+/* ------------------------------------------------------------- */
+
 nav{
     height: 174px;
     width: 100vw;
@@ -29,6 +36,14 @@ nav{
     margin-left: auto;
 }
 
+.navItem{
+    transition: 400ms;
+}
+
+.navItem:hover{
+    transform: translate(1px, 2px)
+}
+
 .navButton{
     color: #FFFFFF;
     text-transform: uppercase;
@@ -37,6 +52,8 @@ nav{
     padding: 10px;
     font-size: 1.5em;
     font-weight: 500;
+
+    transition: 400ms;
 }
 
 .navButton:hover{
@@ -52,7 +69,12 @@ nav{
     text-shadow:  #FFFFFF 1px 2px, #808080 2px 3px;;
 }
 
-/* Animación de ícono de inicio */
+
+
+/* ------------------------------------------------------------- */
+/* ------------------ ANIMACIÓN ÍCONO INICIO ------------------- */
+/* ------------------------------------------------------------- */
+
 .icon1{
     animation-name: iconAnimation1;
     animation-timing-function: ease-in-out;
@@ -98,7 +120,12 @@ nav{
     }
 }
 
-/* ESTILO DE HEADER */
+
+
+/* ------------------------------------------------------------- */
+/* --------------------------- HEADER -------------------------- */
+/* ------------------------------------------------------------- */
+
 header{
     height: 100vh;
     width: 100%;
@@ -119,7 +146,13 @@ h1{
     text-align: center;
 }
 
-/* ESTILO DE SECCIÓN CONTENIDO */
+
+
+
+
+/* ------------------------------------------------------------- */
+/* -------------------- SECCIÓN CONTENIDO ---------------------- */
+/* ------------------------------------------------------------- */
 
 #contenidoSection{
     min-height: 100vh;
@@ -173,7 +206,12 @@ h2{
     width: 80%;
 }
 
-/* ESTILO FOOTER */
+
+
+/* ------------------------------------------------------------- */
+/* ---------------------------- FOOTER ------------------------- */
+/* ------------------------------------------------------------- */
+
 footer{
     display: flex;
     flex-flow: row wrap;

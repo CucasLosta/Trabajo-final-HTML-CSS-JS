@@ -20,7 +20,12 @@ h2{
     margin-top: 130px;
 }
 
-/* ESTILOS DE LA BARRA DE NAVEGACIÓN */
+
+
+/* ------------------------------------------------------------- */
+/* -------------------- BARRA DE NAVEGACIÓN -------------------- */
+/* ------------------------------------------------------------- */
+
 nav{
     height: 174px;
     width: 100vw;
@@ -40,6 +45,14 @@ nav{
     margin-left: auto;
 }
 
+.navItem{
+    transition: 400ms;
+}
+
+.navItem:hover{
+    transform: translate(1px, 2px)
+}
+
 .navButton{
     color: #FFFFFF;
     text-transform: uppercase;
@@ -48,6 +61,8 @@ nav{
     padding: 10px;
     font-size: 1.5em;
     font-weight: 500;
+
+    transition: 400ms;
 }
 
 .navButton:hover{
@@ -63,7 +78,12 @@ nav{
     text-shadow:  #FFFFFF 1px 2px, #808080 2px 3px;;
 }
 
-/* ESTILO DE HEADER */
+
+
+/* ------------------------------------------------------------- */
+/* --------------------------- HEADER -------------------------- */
+/* ------------------------------------------------------------- */
+
 header{
     height: 500px;
     display: flex;
@@ -153,6 +173,7 @@ main{
 
 #puzzleRestartButton:hover{
     background-color: #2F3645;
+    cursor: pointer;
 }
 
 #puzzleRestartButton:active{
